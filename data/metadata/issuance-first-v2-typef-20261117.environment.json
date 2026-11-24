@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "backend": "PBC Type F G1",
+  "native_parameters": {
+    "revision": "anonymous-attribute-credentials",
+    "challenge_bits": 128,
+    "pbc": "1.0.0",
+    "order_bits": 510,
+    "scalar_bytes": 64,
+    "group_bytes": 66,
+    "show_wire_version": "OAS3",
+    "gmp_runtime": "6.3.0",
+    "context_init_ms": 70.589
+  },
+  "command": [
+    "taskset",
+    "-c",
+    "9",
+    "issuance_timing",
+    "parameters/type-f.param",
+    "100"
+  ],
+  "observed_attribute_counts": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64
+  ],
+  "repetitions": 100,
+  "warmups": 3,
+  "core": 9,
+  "modes": [
+    "first",
+    "repeat"
+  ],
+  "issuance_mode": "first-v2",
+  "source_sha256": {
+    "baselines/acl/acl.hpp": "78faea7a62f48daa007ba90153b76b44019efcc4fbcf0a5ea55f48cd8a7a34ad",
+    "baselines/acl/main.cpp": "6f8e03481f2606f01a3c3173087f250147945570535291dcba7b00f7011772ed",
+    "baselines/chan_yuen_2022/chan_yuen.hpp": "e00820a937987cc5ef772b7145e26783ab91aa56e2214016d90b739767561b10",
+    "baselines/chan_yuen_2022/main.cpp": "908f1c9e016ecf96774ddd349edb712de069db9923bb58ad0fc96b5b01e51521",
+    "baselines/chan_yuen_2022/paillier.hpp": "2fd933c904dba69e7914fe14a8a52b6474ca5c28c3d3051e3ac70e6b374267b6",
+    "baselines/chan_yuen_2022/pairing.hpp": "28197e998683c18958ed7855c214a3bca0df6a255b86a9cda7dc9572e04f954c",
+    "baselines/protocol_checks.hpp": "047bb904d1e362d5344ecf6b967f7b4efc5673c0b30b0385bb3fd116857f7dfd",
+    "baselines/uprove/main.cpp": "9585fd321d7f50bcfa067bc6bbf9e357a10613c7839fa0af5931f7f020c8e7ee",
+    "baselines/uprove/uprove.hpp": "708450110ecd4b8bd112e824fd8010ba73b5d515b3d3322d2ad267a5e03e486f",
+    "CMakeLists.txt": "15ca224e274edca3bbdd8d5af6ecd2afb18e3fcc5e836a7edc8790a9d60c136d",
+    "parameters/type-f.param": "9b0f17a37bbdd790c329ba6e1cd31c8a34e3821b439800ffe300d1ba93ba9ed2",
+    "src/benchmark_defaults.hpp": "91aa68ffd560da45a8c3e54f0a059f078f29fc9fa94c89fe6b00a9eb0ad5dcad",
+    "src/comparison.cpp": "0aecd2d71ab272b6dc62538993bd9888475cad98c13f3058b5612286a4819ade",
+    "src/core.hpp": "6997fb9ce79b91452f64d2b40c2204945c2835db3b933686d7b96c08a1bb93b2",
+    "src/group_arithmetic.hpp": "034d39ae9001c3e18a8be163ea2994951e26440c0258a1b49d055e01c33c5314",
+    "src/issuance_communication.cpp": "fc7c02ff8fa95ff41d8327687fb932fbdf9977d33a14149f2f09239cd99a5258",
+    "src/issuance_timing.cpp": "4a64bb46a26ad13febe53127cb3b0ff3fefdab07c4299a1205cc00c4339e886b",
+    "src/issuance_v2.hpp": "d9b5c60cb939d931de17ccdefae7f2b575c8e38bf940c2ee8c9a615d6b55c5be",
+    "src/main.cpp": "a47ae4590b61f934be76216fafb326557f773377b59802adedfbae0bb0548cfe",
+    "src/oom_fixed.hpp": "55f2096d70452d01b41f74f87fca9b1dcd99054af261adf29d1be298facafac2",
+    "src/oom_windows.hpp": "67543018f598beed1defcbfe432a6b0b91f34b30e5913f19c5ff7fa9c1b85cfb",
+    "src/ours.hpp": "328a1d513934ea495b35aaf92e6a2c768feab76fe55719f0a94cf590589745ca",
+    "src/utilization.cpp": "de47c255ce9f59be68a09e93f702d4fedbf9ff673744496900561b1c10359da5"
+  },
+  "artifact_sha256": {
+    "raw_timings.csv": "0e1b0e41d950f4d8fc7848f712d02a031a62119f2620e6c1f8fbdcdb7cb56168",
+    "measured-source.tar.gz": "c9e700e378a8ac808a9a22f44800c679b505b6aae07a41492384c2bc48c74fe4",
+    "native_parameters.json": "374d4b292cde8f48cebbbc8395634041e390b76791e0156ad5fdba698fbde9c5",
+    "measurement.txt": "13e04771ca57676c80431afeb523c04a28662872065d4730c40a9d0e2c84410c",
+    "source_sha256.txt": "3ce30183dcd0a27792e1af0c33b4b871a2aebd0a9a63ccee5d6cb7b7073bde41",
+    "timing.log": "ec3dd455a71e829b0a218816de1e7424e9439e91515060e456eff2966dd49d93"
+  },
+  "raw_sha256": "0e1b0e41d950f4d8fc7848f712d02a031a62119f2620e6c1f8fbdcdb7cb56168"
+}

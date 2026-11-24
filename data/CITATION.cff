@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite this dataset."
+type: dataset
+title: "Experimental data for A Lightweight Single-Show Anonymous Credential Scheme Supporting Anonymous Transfer"
+version: "1.0.0"
+license: CC-BY-4.0
+authors:
+  - family-names: Liang
+    given-names: Yuanshao
+  - family-names: Li
+    given-names: Hui
+  - family-names: Hu
+    given-names: Wenhui
+  - family-names: Jiang
+    given-names: Fuli
+  - family-names: Wu
+    given-names: Naixing
+abstract: >-
+  Experimental measurements and numerical verification for Figures 2–5 and
+  Table III. Data and documentation are licensed under CC BY 4.0; the
+  included verification script is licensed under MIT. This package does not
+  include the protocol implementation needed to rerun the benchmarks.

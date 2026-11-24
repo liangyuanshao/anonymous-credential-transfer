@@ -1,0 +1,74 @@
+{
+  "complete": true,
+  "started_utc": "2026-11-16T03:49:32.089684+00:00",
+  "completed_utc": "2026-11-16T03:59:19.636845+00:00",
+  "hardware": {
+    "cpu": "Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz",
+    "total_memory_bytes": 507207761920
+  },
+  "platform": "Linux-6.8.0-146-generic-x86_64-with-glibc2.39",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "build": "-O3 -DNDEBUG -std=gnu++17",
+  "libraries": {
+    "PBC": "1.0.0",
+    "GMP": "6.3.0"
+  },
+  "affinity": [
+    9
+  ],
+  "repetitions": 100,
+  "warmups": 3,
+  "d": 2,
+  "ell": [
+    64
+  ],
+  "attribute_counts": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    58,
+    59,
+    60,
+    64
+  ],
+  "paired_attribute_counts": [
+    56,
+    58,
+    59,
+    60,
+    64
+  ],
+  "source_sha256": {
+    "src/ours.hpp": "61f1b0ec396f0e79fc5989e0d5b8a70f5fabccdadbc343ee788688da9d1a8eb3",
+    "src/core.hpp": "6997fb9ce79b91452f64d2b40c2204945c2835db3b933686d7b96c08a1bb93b2",
+    "src/group_arithmetic.hpp": "034d39ae9001c3e18a8be163ea2994951e26440c0258a1b49d055e01c33c5314",
+    "src/oom_fixed.hpp": "55f2096d70452d01b41f74f87fca9b1dcd99054af261adf29d1be298facafac2",
+    "src/oom_windows.hpp": "67543018f598beed1defcbfe432a6b0b91f34b30e5913f19c5ff7fa9c1b85cfb",
+    "src/benchmark_defaults.hpp": "91aa68ffd560da45a8c3e54f0a059f078f29fc9fa94c89fe6b00a9eb0ad5dcad",
+    "baselines/acl/acl.hpp": "78faea7a62f48daa007ba90153b76b44019efcc4fbcf0a5ea55f48cd8a7a34ad",
+    "baselines/uprove/uprove.hpp": "708450110ecd4b8bd112e824fd8010ba73b5d515b3d3322d2ad267a5e03e486f",
+    "baselines/chan_yuen_2022/chan_yuen.hpp": "e00820a937987cc5ef772b7145e26783ab91aa56e2214016d90b739767561b10",
+    "baselines/chan_yuen_2022/pairing.hpp": "28197e998683c18958ed7855c214a3bca0df6a255b86a9cda7dc9572e04f954c",
+    "baselines/chan_yuen_2022/paillier.hpp": "2fd933c904dba69e7914fe14a8a52b6474ca5c28c3d3051e3ac70e6b374267b6",
+    "baselines/protocol_checks.hpp": "047bb904d1e362d5344ecf6b967f7b4efc5673c0b30b0385bb3fd116857f7dfd",
+    "parameters/type-f.param": "9b0f17a37bbdd790c329ba6e1cd31c8a34e3821b439800ffe300d1ba93ba9ed2",
+    "tests/legacy_ours.hpp": "328a1d513934ea495b35aaf92e6a2c768feab76fe55719f0a94cf590589745ca",
+    "tests/presentation_verify_window_bench.cpp": "117ef97f0f9684fff508f3133b1cb0fe58067f5f095ec384907a5067573ac205",
+    "run_benchmark.py": "d047065ededb3032d390b062c84e5178c28e3668f2ef8ffdb9fb380371602f0c"
+  },
+  "binary_sha256": "224fe7efff38a302b6df1b82c9889b831014463b79760b10310d1c5b167496b0",
+  "raw_sha256": "483588fb91cefa3687e11827004b91e17eab85d0702b1cb6a880f527ba84c71c",
+  "previous_raw_sha256": "725a3b7cab8f6972160cebeb10f378ce150b655aaa94e448634728e112d00ebb",
+  "scope": "OTAC ell=64 verification including the candidate registration check, proof verification and spent tag insertion. Issuance, sampling, proof generation, state copies and wire decoding are outside timed intervals. Old and new verification at paired attribute counts use the same proof, and alternate execution order."
+}

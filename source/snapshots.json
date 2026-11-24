@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "snapshots": {
+    "first-issuance": {
+      "archive": "source/measured/first-issuance.tar.gz",
+      "archive_sha256": "c9e700e378a8ac808a9a22f44800c679b505b6aae07a41492384c2bc48c74fe4",
+      "original_project_paths": [
+        "results/issuance-first-v2-typef-20261117/measured-source.tar.gz"
+      ],
+      "environment_files": [
+        "data/metadata/issuance-first-v2-typef-20261117.environment.json"
+      ],
+      "paper_items": [
+        "Figure 3",
+        "Figure 2 implementation"
+      ],
+      "targets": {
+        "issuance_timing": "src/issuance_timing.cpp",
+        "issuance_communication": "src/issuance_communication.cpp"
+      }
+    },
+    "presentation-main": {
+      "archive": "source/measured/presentation-main.zip",
+      "archive_sha256": "d689f68e272b7187ef66c46d9848cbde17a7e5b10f3867d42b6df2c01507c2c9",
+      "original_project_paths": [
+        "results/presentation-oas3-20261110/measured-source.zip"
+      ],
+      "environment_files": [
+        "data/metadata/presentation-oas3-20261110.environment.json"
+      ],
+      "paper_items": [
+        "Figure 4 generation and baseline verification"
+      ],
+      "targets": {
+        "presentation_integrated_bench": "tests/presentation_integrated_bench.cpp"
+      }
+    },
+    "presentation-verification": {
+      "archive": "source/measured/presentation-verification.zip",
+      "archive_sha256": "c013bb4278d711f0a478c625b7e61a812013d2dd7dc7dbd19b55040a6698659d",
+      "original_project_paths": [
+        "results/presentation-verify-window-20261116/measured-source.zip"
+      ],
+      "environment_files": [
+        "data/metadata/presentation-verify-window-20261116.environment.json"
+      ],
+      "paper_items": [
+        "Figure 4 OTAC ell=64 verification"
+      ],
+      "targets": {
+        "presentation_verify_window_bench": "tests/presentation_verify_window_bench.cpp"
+      }
+    },
+    "transfer": {
+      "archive": "source/measured/transfer.tar.gz",
+      "archive_sha256": "b1c03d8dcd69726ed841c80b411da7e420f65869e479e2f3dc8337f7e992c985",
+      "original_project_paths": [
+        "results/attribute-scale-20261109/measured-source.tar.gz"
+      ],
+      "environment_files": [
+        "data/metadata/attribute-scale-20261109.environment.json"
+      ],
+      "paper_items": [
+        "Table III"
+      ],
+      "targets": {
+        "comparison_bench": "src/comparison.cpp"
+      }
+    },
+    "utilization": {
+      "archive": "source/measured/utilization.zip",
+      "archive_sha256": "c052f612122192b24aa159d759cf5ab9d9d2303a28f4c6d450b0c9980f062ef3",
+      "original_project_paths": [
+        "results/utilization-oas3-10000-20261110-n16/measured-source.zip",
+        "results/utilization-oas3-10000-20261110-n32/measured-source.zip"
+      ],
+      "environment_files": [
+        "data/metadata/utilization-oas3-10000-20261110-n16.environment.json",
+        "data/metadata/utilization-oas3-10000-20261110-n32.environment.json"
+      ],
+      "paper_items": [
+        "Figure 5(a)",
+        "Figure 5(b)"
+      ],
+      "targets": {
+        "utilization_bench": "src/utilization.cpp"
+      }
+    }
+  },
+  "notes": [
+    "Figure 2 has no independent archived environment record; the first-issuance snapshot contains its communication implementation and is supplied as the related implementation, not as proof of the exact Figure 2 execution source.",
+    "The two Figure 5 source archives are byte-identical and are stored once.",
+    "Historical archives are preserved byte for byte. Their original staging scripts may reference machine-specific directories; use tools/build_snapshot.py and the direct commands in README.md."
+  ]
+}

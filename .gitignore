@@ -1,0 +1,16 @@
+.git/
+.work/
+.venv/
+__pycache__/
+tmp/
+*.pyc
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+build*/
+source/current/vendor/
+source/current/results/
+source/current/figures/

@@ -1,0 +1,17 @@
+experiment,scheme,profile,operation,ell,n,d,repetitions,median_ms,ci95_low_ms,ci95_high_ms,operation_complete,source_csv,source_csv_sha256
+attributes,OTAC,pbc-native,transfer,64,8,2,100,39.3097315,39.283064,39.339438,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,verify_transfer,64,8,2,100,51.234687,51.173092,51.271197,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,transfer,64,16,2,100,43.2264905,43.210244,43.253133,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,verify_transfer,64,16,2,100,54.3617535,54.305254,54.404981,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,transfer,64,24,2,100,47.0047515,46.963978,47.047557,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,verify_transfer,64,24,2,100,57.3445995,57.301418775,57.387941,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,transfer,64,32,2,100,50.8874505,50.874703,50.92491,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,verify_transfer,64,32,2,100,60.776917499999996,60.73068,60.809954,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,transfer,64,40,2,100,54.79649,54.777129,54.83825,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,verify_transfer,64,40,2,100,63.147987,63.11657305,63.181923,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,transfer,64,48,2,100,58.5867175,58.5362,58.621371,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,verify_transfer,64,48,2,100,65.386498,65.34304,65.427332,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,transfer,64,56,2,100,62.506808,62.489563,62.535584,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,verify_transfer,64,56,2,100,67.69224750000001,67.657013475,67.7675385,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,transfer,64,64,2,100,66.297422,66.266298,66.343953,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4
+attributes,OTAC,pbc-native,verify_transfer,64,64,2,100,69.9617145,69.917907,70.0087375,1,results/attribute-scale-20261109/raw_timings.csv,613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4

@@ -1,0 +1,10 @@
+machine=x86_64
+kernel=6.8.0-146-generic
+os=Ubuntu 24.04.5 LTS
+Model name:                              Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Command: taskset -c 9 ./build/issuance_timing parameters/type-f.param 100
+started_utc=2026-11-17T12:42:01+00:00
+8ce67929c10bf19599407094f332ff9a879f19a79ff2af79d8640b0473fe85f4  ./build/issuance_timing
+8dfcc4ced65bb95d1f48f1756b172c8c3f712ec4e98c8de4485de7843c40b5ea  ./dependencies/gmp/usr/lib/x86_64-linux-gnu/libgmp.a
+completed_utc=2026-11-17T12:49:44+00:00

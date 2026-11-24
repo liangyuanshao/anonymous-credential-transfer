@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0",
+  "release_status": "release-candidate",
+  "version": "1.0.0",
+  "prepared_on": "2026-11-24",
+  "intended_repository": "Zenodo",
+  "paper": {
+    "title": "A Lightweight Single-Show Anonymous Credential Scheme Supporting Anonymous Transfer",
+    "authors": [
+      "Yuanshao Liang",
+      "Hui Li",
+      "Wenhui Hu",
+      "Fuli Jiang",
+      "Naixing Wu"
+    ]
+  },
+  "scope": "Figure 2-5 and Table III measurement data and numerical verification; no protocol implementation or measured-source snapshots.",
+  "timing_runs": [
+    "issuance-first-v2-typef-20261117",
+    "presentation-oas3-20261110",
+    "presentation-verify-window-20261116",
+    "attribute-scale-20261109",
+    "utilization-oas3-10000-20261110-n16",
+    "utilization-oas3-10000-20261110-n32"
+  ],
+  "provenance_note": "All source_project_relative values are historical project-relative paths. Embedded source/binary/artifact hashes in environment files identify original measurement artifacts, including omitted files; the public file hashes below are authoritative for this package.",
+  "integrity_scope": "files inventories all release files except manifest.json and SHA256SUMS; SHA256SUMS covers every file except itself.",
+  "lineage": [
+    {
+      "paper_item": "Figure 2",
+      "processed": [
+        "data/processed/figure_2_issuance.csv"
+      ],
+      "raw": [
+        "data/raw/issuance-communication/transcripts-v2.csv",
+        "data/raw/issuance-communication/transcripts.csv"
+      ]
+    },
+    {
+      "paper_item": "Figure 3",
+      "processed": [
+        "data/processed/figure_3_issuance_timings.csv"
+      ],
+      "raw": [
+        "data/raw/issuance-first-v2-typef-20261117/raw_timings.csv"
+      ],
+      "selection": "mode=first; role=holder or issuer; n=4,8,...,64"
+    },
+    {
+      "paper_item": "Figure 4",
+      "processed": [
+        "data/processed/figure_4_presentation_timings.csv"
+      ],
+      "raw": [
+        "data/raw/presentation-oas3-20261110/raw_timings.csv",
+        "data/raw/presentation-verify-window-20261116/raw_timings.csv"
+      ],
+      "selection": "OTAC ell=64 verification uses the verification-window run; other plotted series use OAS3 integrated-presentation data."
+    },
+    {
+      "paper_item": "Table III",
+      "processed": [
+        "data/processed/table_iii_transfer.csv"
+      ],
+      "raw": [
+        "data/raw/attribute-scale-20261109/raw_timings.csv"
+      ],
+      "selection": "OTAC/pbc-native; ell=64; d=2; n=8,16,...,64; operation=transfer or verify_transfer"
+    },
+    {
+      "paper_item": "Figure 5, n=16",
+      "processed": [
+        "data/processed/figure_5_n16_workload_curves.csv",
+        "data/processed/figure_5_n16_break_even.csv",
+        "data/processed/figure_5_n16_savings.csv",
+        "data/processed/figure_5_n16_phase_means.csv"
+      ],
+      "raw": [
+        "data/raw/utilization-oas3-10000-20261110-n16/raw_timings.csv"
+      ]
+    },
+    {
+      "paper_item": "Figure 5, n=32",
+      "processed": [
+        "data/processed/figure_5_n32_workload_curves.csv",
+        "data/processed/figure_5_n32_break_even.csv",
+        "data/processed/figure_5_n32_savings.csv",
+        "data/processed/figure_5_n32_phase_means.csv"
+      ],
+      "raw": [
+        "data/raw/utilization-oas3-10000-20261110-n32/raw_timings.csv"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "CITATION.cff",
+      "kind": "citation",
+      "bytes": 810,
+      "sha256": "f55079e1b8e2e2c3956b304830f57a2f1ca3db35a81de19a0bf9ea76b1dbcb1a"
+    },
+    {
+      "path": "LICENSE-CODE.txt",
+      "kind": "license",
+      "bytes": 1075,
+      "sha256": "8889d8051fb593345eb234feb0ee5129756ed692b237d1c1db3fda0de81387ed",
+      "source_url": "https://spdx.org/licenses/MIT.txt",
+      "original_sha256": "c3b1b78bc8bd3ea13aa4bc9778442d16560270afa235006d816e5e88cef24db4",
+      "transformation": "Complete SPDX MIT license text; year and copyright holder placeholders filled."
+    },
+    {
+      "path": "LICENSE-DATA.txt",
+      "kind": "license",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "source_url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
+      "original_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "transformation": "Complete official license text, byte-preserved."
+    },
+    {
+      "path": "README.md",
+      "kind": "documentation",
+      "bytes": 16820,
+      "sha256": "de1f44ae1efb838c40d77ceac9f927cc122c35e43d3ab0bee85a970b4528b584"
+    },
+    {
+      "path": "data/processed/figure_2_issuance.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 536,
+      "sha256": "730b443c0a0e52167b042e1d9f9af6b5373b8b88ee451db62d4ecbe7129f7cb0",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_2_issuance.csv",
+      "original_sha256": "730b443c0a0e52167b042e1d9f9af6b5373b8b88ee451db62d4ecbe7129f7cb0",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 16
+    },
+    {
+      "path": "data/processed/figure_3_issuance_timings.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 17569,
+      "sha256": "f0152650a944893b686219ae31e6af4b9390b82108212acc9cbbbe17beafae25",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_3_issuance_timings.csv",
+      "original_sha256": "f0152650a944893b686219ae31e6af4b9390b82108212acc9cbbbe17beafae25",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 96
+    },
+    {
+      "path": "data/processed/figure_4_presentation_timings.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 28298,
+      "sha256": "cac1404f6776b948952d73d89d6127cd13357744b53717b70a873844846a8495",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_4_presentation_timings.csv",
+      "original_sha256": "cac1404f6776b948952d73d89d6127cd13357744b53717b70a873844846a8495",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 160
+    },
+    {
+      "path": "data/processed/figure_5_n16_break_even.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 700,
+      "sha256": "f497171d4f877af0a3d26b2a5d88055c83da60a0a49fb2017c52c5187d23c34c",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_5_n16_break_even.csv",
+      "original_sha256": "f497171d4f877af0a3d26b2a5d88055c83da60a0a49fb2017c52c5187d23c34c",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 3
+    },
+    {
+      "path": "data/processed/figure_5_n16_phase_means.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 466,
+      "sha256": "720bb6f62b29c92e5c1a2c25a719b3ec88e09a867a88c50f23dfcf230155643b",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_5_n16_phase_means.csv",
+      "original_sha256": "720bb6f62b29c92e5c1a2c25a719b3ec88e09a867a88c50f23dfcf230155643b",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 3
+    },
+    {
+      "path": "data/processed/figure_5_n16_savings.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 2272338,
+      "sha256": "7e3edd5e8dc38a847ceae6cd6b793cc421129b9d3ae11d9470dd461db325496d",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_5_n16_savings.csv",
+      "original_sha256": "7e3edd5e8dc38a847ceae6cd6b793cc421129b9d3ae11d9470dd461db325496d",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 30003
+    },
+    {
+      "path": "data/processed/figure_5_n16_workload_curves.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 2128118,
+      "sha256": "5ad22b7520e99b63e425b98c25b2d5164b7f0ddf189e303952710a9676352774",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_5_n16_workload_curves.csv",
+      "original_sha256": "5ad22b7520e99b63e425b98c25b2d5164b7f0ddf189e303952710a9676352774",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 30003
+    },
+    {
+      "path": "data/processed/figure_5_n32_break_even.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 609,
+      "sha256": "412dc432254691754a9e1e00dcedd5d872962356bee82a4a9ca313e6a727fdea",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_5_n32_break_even.csv",
+      "original_sha256": "412dc432254691754a9e1e00dcedd5d872962356bee82a4a9ca313e6a727fdea",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 3
+    },
+    {
+      "path": "data/processed/figure_5_n32_phase_means.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 462,
+      "sha256": "dfa41df6a9819a86000c3bb4961d98e784fb2a33e886232eddcec49d0c21d5a3",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_5_n32_phase_means.csv",
+      "original_sha256": "dfa41df6a9819a86000c3bb4961d98e784fb2a33e886232eddcec49d0c21d5a3",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 3
+    },
+    {
+      "path": "data/processed/figure_5_n32_savings.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 2272114,
+      "sha256": "bc5ac696e85456e07facfce0bb2be2dfd30b035ebcbcb59b82dd35ce9d3cede2",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_5_n32_savings.csv",
+      "original_sha256": "bc5ac696e85456e07facfce0bb2be2dfd30b035ebcbcb59b82dd35ce9d3cede2",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 30003
+    },
+    {
+      "path": "data/processed/figure_5_n32_workload_curves.csv",
+      "kind": "archived_processed_csv",
+      "bytes": 2129241,
+      "sha256": "f0764d09512ff7423a70d301957799cd52921f2fc63c5c04cfcca99178445613",
+      "source_project_relative": "压缩中文稿/assets/performance/ieee-final-single-column-20261118/source_data/figure_5_n32_workload_curves.csv",
+      "original_sha256": "f0764d09512ff7423a70d301957799cd52921f2fc63c5c04cfcca99178445613",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 30003
+    },
+    {
+      "path": "data/processed/table_iii_transfer.csv",
+      "kind": "derived_processed_csv",
+      "bytes": 3325,
+      "sha256": "d245ed2807bb0fdd63156ba697a77526ea3ab3a684b4da7a6406500f41ce4ebb",
+      "source_project_relative": "one-time-anonymous-credentials/results/attribute-scale-20261109/summary.csv",
+      "original_sha256": "cdb8be57299fa2136603e09182cea527dd0ce37f568098644143338a03139411",
+      "transformation": "Sixteen complete summary rows selected for OTAC/pbc-native, ell=64, d=2, n=8,16,...,64 and transfer/verify_transfer; original full-precision values retained.",
+      "rows": 16
+    },
+    {
+      "path": "data/raw/attribute-scale-20261109/raw_timings.csv",
+      "kind": "raw_csv",
+      "bytes": 1916515,
+      "sha256": "613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4",
+      "source_project_relative": "one-time-anonymous-credentials/results/attribute-scale-20261109/raw_timings.csv",
+      "original_sha256": "613c20c323f30a7b8ebca44b2367ee2049bde27dc045adb30efb34b2c41038e4",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 29400
+    },
+    {
+      "path": "data/raw/issuance-communication/transcripts-v2.csv",
+      "kind": "raw_csv",
+      "bytes": 3759,
+      "sha256": "86f1a85bd4c199be11788a129309aca07fc6f96b17e24cd2aaa9ed057be058da",
+      "source_project_relative": "one-time-anonymous-credentials/results/issuance-communication/transcripts-v2.csv",
+      "original_sha256": "86f1a85bd4c199be11788a129309aca07fc6f96b17e24cd2aaa9ed057be058da",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 96
+    },
+    {
+      "path": "data/raw/issuance-communication/transcripts.csv",
+      "kind": "raw_csv",
+      "bytes": 3819,
+      "sha256": "c06c03d037b0f17090e40163c1064fa53c338f35a0ac9817552f0ce0db3924b8",
+      "source_project_relative": "one-time-anonymous-credentials/results/issuance-communication/transcripts.csv",
+      "original_sha256": "c06c03d037b0f17090e40163c1064fa53c338f35a0ac9817552f0ce0db3924b8",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 96
+    },
+    {
+      "path": "data/raw/issuance-first-v2-typef-20261117/raw_timings.csv",
+      "kind": "raw_csv",
+      "bytes": 760030,
+      "sha256": "0e1b0e41d950f4d8fc7848f712d02a031a62119f2620e6c1f8fbdcdb7cb56168",
+      "source_project_relative": "one-time-anonymous-credentials/results/issuance-first-v2-typef-20261117/raw_timings.csv",
+      "original_sha256": "0e1b0e41d950f4d8fc7848f712d02a031a62119f2620e6c1f8fbdcdb7cb56168",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 22400
+    },
+    {
+      "path": "data/raw/presentation-oas3-20261110/raw_timings.csv",
+      "kind": "raw_csv",
+      "bytes": 361746,
+      "sha256": "725a3b7cab8f6972160cebeb10f378ce150b655aaa94e448634728e112d00ebb",
+      "source_project_relative": "one-time-anonymous-credentials/results/presentation-oas3-20261110/raw_timings.csv",
+      "original_sha256": "725a3b7cab8f6972160cebeb10f378ce150b655aaa94e448634728e112d00ebb",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 8100
+    },
+    {
+      "path": "data/raw/presentation-verify-window-20261116/raw_timings.csv",
+      "kind": "raw_csv",
+      "bytes": 48420,
+      "sha256": "483588fb91cefa3687e11827004b91e17eab85d0702b1cb6a880f527ba84c71c",
+      "source_project_relative": "one-time-anonymous-credentials/results/presentation-verify-window-20261116/raw_timings.csv",
+      "original_sha256": "483588fb91cefa3687e11827004b91e17eab85d0702b1cb6a880f527ba84c71c",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 1800
+    },
+    {
+      "path": "data/raw/utilization-oas3-10000-20261110-n16/raw_timings.csv",
+      "kind": "raw_csv",
+      "bytes": 12940139,
+      "sha256": "c7b20291fc195ee131079d85aaef29edd742cde46a75791b46fd176ec775bfb2",
+      "source_project_relative": "one-time-anonymous-credentials/results/utilization-oas3-10000-20261110-n16/raw_timings.csv",
+      "original_sha256": "c7b20291fc195ee131079d85aaef29edd742cde46a75791b46fd176ec775bfb2",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 180000
+    },
+    {
+      "path": "data/raw/utilization-oas3-10000-20261110-n32/raw_timings.csv",
+      "kind": "raw_csv",
+      "bytes": 12939787,
+      "sha256": "a4de10a92340c9ece756dc9b57a8ed5b3730424fb347a2000f888efff4a3e9d7",
+      "source_project_relative": "one-time-anonymous-credentials/results/utilization-oas3-10000-20261110-n32/raw_timings.csv",
+      "original_sha256": "a4de10a92340c9ece756dc9b57a8ed5b3730424fb347a2000f888efff4a3e9d7",
+      "transformation": "Byte-for-byte copy; no filtering or line-ending conversion.",
+      "rows": 180000
+    },
+    {
+      "path": "metadata/attribute-scale-20261109.environment.json",
+      "kind": "metadata_json",
+      "bytes": 4622,
+      "sha256": "5ae816628c8020cc7fe8c717db0f68f3a89674abe3c679ae909150c7e65a9347",
+      "source_project_relative": "one-time-anonymous-credentials/results/attribute-scale-20261109/environment.json",
+      "original_sha256": "81d796e7cd43cd5283287e41a4a3a0ca05cba0f6eb231e7ca17cb6781d4054d4",
+      "transformation": "Only private absolute build/dependency locations normalized to relative paths; all other metadata bytes retained.",
+      "private_paths_normalized": 1
+    },
+    {
+      "path": "metadata/issuance-first-v2-typef-20261117.environment.json",
+      "kind": "metadata_json",
+      "bytes": 3809,
+      "sha256": "46b34d40e7b5cfb809939bab3a1fbc1e90a0a70dc3664f181ce10ad286c1726e",
+      "source_project_relative": "one-time-anonymous-credentials/results/issuance-first-v2-typef-20261117/environment.json",
+      "original_sha256": "46b34d40e7b5cfb809939bab3a1fbc1e90a0a70dc3664f181ce10ad286c1726e",
+      "transformation": "Byte-for-byte copy; no private location was present.",
+      "private_paths_normalized": 0
+    },
+    {
+      "path": "metadata/issuance-first-v2-typef-20261117.measurement.txt",
+      "kind": "metadata_text",
+      "bytes": 549,
+      "sha256": "05c79b10b9275ce1a8971db2f6db04fea748cbb769e89b7d0ee55b049f0d396b",
+      "source_project_relative": "one-time-anonymous-credentials/results/issuance-first-v2-typef-20261117/measurement.txt",
+      "original_sha256": "13e04771ca57676c80431afeb523c04a28662872065d4730c40a9d0e2c84410c",
+      "transformation": "Only private absolute build/dependency locations normalized to relative paths; all other metadata bytes retained.",
+      "private_paths_normalized": 2
+    },
+    {
+      "path": "metadata/presentation-oas3-20261110.environment.json",
+      "kind": "metadata_json",
+      "bytes": 3126,
+      "sha256": "1be13a60b4c2904b68148cd74cd42349ffc5337750fa3a581c9d168ca773c9e5",
+      "source_project_relative": "one-time-anonymous-credentials/results/presentation-oas3-20261110/environment.json",
+      "original_sha256": "1be13a60b4c2904b68148cd74cd42349ffc5337750fa3a581c9d168ca773c9e5",
+      "transformation": "Byte-for-byte copy; no private location was present.",
+      "private_paths_normalized": 0
+    },
+    {
+      "path": "metadata/presentation-verify-window-20261116.environment.json",
+      "kind": "metadata_json",
+      "bytes": 3047,
+      "sha256": "7d1b7deaba63e239a2519cdb94414a3b5de576d707d6fd1e665cc173a174cf92",
+      "source_project_relative": "one-time-anonymous-credentials/results/presentation-verify-window-20261116/environment.json",
+      "original_sha256": "7d1b7deaba63e239a2519cdb94414a3b5de576d707d6fd1e665cc173a174cf92",
+      "transformation": "Byte-for-byte copy; no private location was present.",
+      "private_paths_normalized": 0
+    },
+    {
+      "path": "metadata/utilization-oas3-10000-20261110-n16.environment.json",
+      "kind": "metadata_json",
+      "bytes": 4890,
+      "sha256": "56bc8e916d6f1a2f862349e8516574094d1538da131f6730533ec7b8f97c9c76",
+      "source_project_relative": "one-time-anonymous-credentials/results/utilization-oas3-10000-20261110-n16/environment.json",
+      "original_sha256": "c156baadd67b14e61ab945e45843f8e586cccbcfbe8118893e9f7948d5cf4248",
+      "transformation": "Only private absolute build/dependency locations normalized to relative paths; all other metadata bytes retained.",
+      "private_paths_normalized": 1
+    },
+    {
+      "path": "metadata/utilization-oas3-10000-20261110-n32.environment.json",
+      "kind": "metadata_json",
+      "bytes": 4890,
+      "sha256": "7bf0fdf38c117f05cd11a1459d684c73c1bf3c87a4d4d89ea43faba092cec22c",
+      "source_project_relative": "one-time-anonymous-credentials/results/utilization-oas3-10000-20261110-n32/environment.json",
+      "original_sha256": "01251dc788bf9486c5411c948f3aca4c03532435109bc253427b478b8ea46834",
+      "transformation": "Only private absolute build/dependency locations normalized to relative paths; all other metadata bytes retained.",
+      "private_paths_normalized": 1
+    },
+    {
+      "path": "scripts/verify.py",
+      "kind": "analysis_script",
+      "bytes": 21455,
+      "sha256": "499d01f1d9cbf40ff7505faf94db2f3a1026b329e4cf49115659e01a84a76244",
+      "source_project_relative": "tmp/data-release-20261124/helper_verify.py",
+      "original_sha256": "05beadfa7570bcdd0c3027b0cffb9e67e8cc9aa93841ad9760b6b2ebef46cab3",
+      "transformation": "Standard-library numerical verifier; release status/version checks and MIT identifier updated for version 1.0.0. Numerical verification logic is unchanged."
+    }
+  ],
+  "licenses": {
+    "data_metadata_documentation": {
+      "spdx_identifier": "CC-BY-4.0",
+      "file": "LICENSE-DATA.txt",
+      "source_url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt"
+    },
+    "analysis_script": {
+      "spdx_identifier": "MIT",
+      "file": "LICENSE-CODE.txt",
+      "source_url": "https://spdx.org/licenses/MIT.txt"
+    }
+  }
+}

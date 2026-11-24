@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite it."
+type: software
+title: "Reproducibility package for A Lightweight Single-Show Anonymous Credential Scheme Supporting Anonymous Transfer"
+version: "1.0.0"
+repository-code: "https://github.com/liangyuanshao/anonymous-credential-transfer"
+url: "https://github.com/liangyuanshao/anonymous-credential-transfer"
+license:
+  - MIT
+  - CC-BY-4.0
+authors:
+  - family-names: Liang
+    given-names: Yuanshao
+    orcid: "https://orcid.org/0009-0003-6843-6783"
+  - family-names: Li
+    given-names: Hui
+    orcid: "https://orcid.org/0000-0001-5244-9473"
+  - family-names: Hu
+    given-names: Wenhui
+  - family-names: Jiang
+    given-names: Fuli
+  - family-names: Wu
+    given-names: Naixing
+abstract: >-
+  Measured benchmark source snapshots, current implementation source, experimental
+  data and verification tools for the associated manuscript. Authored code is
+  MIT-licensed; data and data documentation are CC BY 4.0. Third-party dependencies
+  retain their own licenses. Full-scale benchmark runs are not rerun by the
+  numerical verifier.
